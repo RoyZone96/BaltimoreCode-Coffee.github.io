@@ -70,7 +70,7 @@
   cursor: pointer;
   text-decoration: none;
   width: 230px;
-  display: block;
+  display: inline-block;
 }
 
 .navbar a:hover {
@@ -87,8 +87,20 @@
 /* Add responsiveness */
 @media screen and (max-width: 600px) {
   .navbar a {
-    float: none;
-    width: 100%;
-    text-align: left;
+    display: none; /* Hide all menu items */
   }
+  .navbar a[href="./index.html"],
+  .navbar .icon {
+    display: inline-block; /* Show only the Home item and the menu toggle icon */
+  }
+}
+
+/* Toggle menu items visibility */
+.navbar.responsive a {
+  display: inline-block; /* Show all menu items when the navbar is responsive */
+}
+.navbar.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
 }

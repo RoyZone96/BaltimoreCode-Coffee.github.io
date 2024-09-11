@@ -1,34 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <title>
-      Baltimore Code and Coffee | Baltimore's best in-person tech meetup
-    </title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baltimore Code and Coffee | Baltimore's best in-person tech meetup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link rel="icon" href="images/favicons/favicon.png" />
-
+    <link rel="stylesheet" href="C:\Users\royzo\Downloads\font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="canonical" href="https://baltimorecodeandcoffee.com/" />
     <meta property="og:type" content="Baltimore Code and Coffee" />
     <meta property="og:url" content="http://baltimorecodeandcoffee.com/" />
     <meta property="og:site_name" content="Baltimore Code and Coffee" />
     <meta property="og:title" content="Baltimore Code and Coffee" />
-    <meta
-      property="og:description"
-      content="Baltimore's best in-person tech meetup."
-    />
-    <meta
-      name="description"
-      content="Baltimore's best in-person tech meetup."
-    />
-
+    <meta property="og:description" content="Baltimore's best in-person tech meetup." />
+    <meta name="description" content="Baltimore's best in-person tech meetup." />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
     <link rel="stylesheet" href="./css/master.css" />
@@ -36,10 +21,15 @@
 
   <body id="body">
     <div class="navbar">
-      <a href="./index.html">Home</a>
-      <a href="./org-structure.html">Org Structure</a>
-      <a href="./get-involved.html">Get Involved!</a>
-      <a href="./meet-the-members.html">Meet the Members</a>
+    
+      <a  href="./index.html">Home</a>
+      <a  href="./org-structure.html">Org Structure</a>
+      <a  href="./get-involved.html">Get Involved!</a>
+      <a  href="./meet-the-members.html">Meet the Members</a>  
+      
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
     </div>
 
     <button id="toggle-dark-mode">☀️</button>
@@ -88,7 +78,7 @@
     </div>
     <!-- Aside - Slack Social -->
     <aside id="slackButton" class="slack-social slack-social__container">
-      <a
+      <a rel="noopener"
         href="https://join.slack.com/t/baltimoretech/shared_invite/zt-25vc0y5qv-naHml_SW42t5Cz1LZx1RTw&sa=D&source=editors&ust=1724862339979236&usg=AOvVaw1Tfr9v1MX4e-U5V_8-q_c-"
         target="_blank"
         class="slack-social__link"
@@ -114,5 +104,15 @@
     <script async data-id="101449400" src="//static.getclicky.com/js"></script>
 
     <script src="./lightdark.js"></script>
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("navbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
   </body>
 </html>
